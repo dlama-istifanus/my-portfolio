@@ -140,7 +140,7 @@ body{
 }
 #first-section .top-body .myself-container .myself .socials i:hover{
     background-color: rgb(69, 41, 121);
-    transition: linear 1.5s;
+    transition: all 1.5s;
 }
 #first-section .top-body .myself-image{
     display: flex;
@@ -165,6 +165,7 @@ body{
     width: 80%;
     margin: 0 auto;
     padding: 100px 0;
+
 }
 #second-section p{
     color: grey;
@@ -182,8 +183,7 @@ body{
     padding: 20px 0;
 }
 #second-section .about-body{
-    display: flex;
-    flex: wrap;
+  margin: 0 auto;
 }
 #second-section .about-body .about{
    text-align: center;
@@ -677,6 +677,7 @@ body{
     #second-section .about-body .about{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     #second-section .about-body .about .left-side{
         width: 40%;
