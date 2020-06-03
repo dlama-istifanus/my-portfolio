@@ -10,10 +10,11 @@ body{
     -moz-box-shadow: 0px 7px 10px -4px rgba(0,0,0,0.67);
     box-shadow: 0px 7px 10px -4px #7149BC;
 }
-#first-section .header-container{
+/* header links */
+#first-section #header-container{
     background-color: #ffffff;
 }
-#first-section .header{
+#first-section #header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,7 +23,7 @@ body{
     margin: 0 auto;
     padding: 20px 0;
 }
-#first-section .header .logo{
+#first-section #header #logo{
     display: flex;
     justify-self: flex-start;
     position: relative;
@@ -31,7 +32,7 @@ body{
     font-size: 30px;
     justify-content: space-between;
 }
-#first-section .header .links{
+#first-section #header #links{
     display: flex;
     justify-content: space-between;
     justify-self: flex-end;
@@ -40,19 +41,19 @@ body{
     align-self: center;
    
 }
-#first-section .header .links a{
+#first-section #header #links a{
     text-decoration: none;
     color: rgb(117, 114, 114);
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase; 
     transition: 0.5s;
 }
-#first-section .header .links a:hover{
+#first-section #header #links a:hover{
     color: #7149BC;
     border-bottom: 3px solid #7149BC;;
     position: relative;   
 }
-/* #first-section .header .links a:hover::after{
+/* #first-section #header #links a:hover::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -160,7 +161,7 @@ body{
     opacity: 0.9;
     transition: ease-in-out 1.2s;
 }
-/* second-section */
+/* About me section */
 #second-section{
     width: 80%;
     margin: 0 auto;
@@ -205,7 +206,7 @@ body{
     color: #7149BC;
     padding-right: 10px;
 }
-/* thirdsection */
+/* my service section */
 #third-section{
     background-color: #f3ebeb;
     text-align: center;
@@ -252,6 +253,7 @@ body{
     padding: 100px 0;
     color: #ffffff;
 }
+/* hire me section */
 #third-section .hire-me::before{
     content: "";
     position: absolute;
@@ -300,7 +302,7 @@ body{
     background-color: #ffffff;
     cursor: pointer;
 }
-/* #forth-section */
+/* my works -section */
 #forth-section .work{
     width: 80%;
     margin: 0 auto;
@@ -338,7 +340,7 @@ body{
     border-radius: 20px;
     cursor: pointer;
 } 
-/* fifth-section */
+/* contact -section */
 #fifth-section{
     background-color: #faf8f8;
     padding: 80px 0;
@@ -429,7 +431,7 @@ body{
     width: 100%;
     height: 100%;
 }
-/* sixth-section */
+/* social media -section */
 #sixth-section .footer-container{
     background-color: rgb(65, 43, 105);
 }
@@ -440,7 +442,7 @@ body{
     color: white;
     padding: 60px 0;
 }
-#sixth-section .footer-container .footer .logo{
+#sixth-section .footer-container .footer #logo{
     display: flex;
     justify-content: center;
     width: 22%;
@@ -464,6 +466,7 @@ body{
     padding: 20px;
     border-radius: 50%;
 }
+/* copy right */
 #sixth-section .copyright{
     background-color: #162135;
     color: #ffffff;
@@ -474,15 +477,16 @@ body{
 
 /* tablet */
 @media screen and (max-width: 1024px){
-    #first-section .header-container .header .logo h4{
+    #first-section #header-container #header #logo h4{
         display: none;
     }
-    #first-section .header-container .header .links{
+    #first-section #header-container #header #links{
         display: flex;
         justify-content: space-between;   
         width: 70%;
         flex-wrap: nowrap;
         margin-left: 20px;
+        display: none;
     }
     #first-section .top-body{
         display: flex;
@@ -576,24 +580,37 @@ body{
         flex-wrap: nowrap;
         height: 600px;
     }
-    #first-section .header-container{
+    #first-section #header-container{
         width: 20%;
-        margin-left: 0px;
+        background-color: #7149BC;
     }
-    #first-section .header-container .header{
+    #first-section #header-container #header{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         flex-direction: column;
         margin-left: 20px;
     }
-    #first-section .header-container .header .logo{
+    #first-section #header-container #header #logo{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-left: 3px;
+        /* justify-content: flex-start; */
+        color: #ffffff;
+        cursor: pointer;
+        width: 100%;
     }
-    #first-section .header-container .header .links{
+    #first-section #header-container #header #logo .fab{
+        width: 50%;
+        /* margin-left: 30px; */
+    }
+    #first-section #header-container #header #logo .fa{
+        color: #7149BC;
+        display: none;
+        width: 50%;
+        justify-self: right;
+        font-size: 20px;
+    }
+    #first-section #header-container #header #links{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -601,11 +618,12 @@ body{
         margin-left: 3px;
         margin-right: 25px;
         width: 100%;
+        display: none;
     }
-    #first-section .header-container .header .links a{
+    #first-section #header-container #header #links a{
         line-height: 40px;  
-        font-size: 10px;
-        
+        font-size: 10px; 
+        display: block;  
     }
     #first-section .top-body{
         display: flex;
@@ -768,7 +786,7 @@ body{
         width: 80%;
         margin: 0 auto;   
     }
-    #sixth-section .footer-container .footer .logo{
+    #sixth-section .footer-container .footer #logo{
         margin: 20px auto;
         font-size: 20px;
     }
