@@ -489,7 +489,6 @@ body{
         width: 70%;
         flex-wrap: nowrap;
         margin-left: 20px;
-        display: none;
     }
     #first-section .top-body{
         display: flex;
