@@ -32,6 +32,9 @@ body{
     font-size: 30px;
     justify-content: space-between;
 }
+#first-section #header-container #header #logo .fa{
+    display: none;
+}
 #first-section #header #links{
     display: flex;
     justify-content: space-between;
