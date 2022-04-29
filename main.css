@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+    transition: 20s;
+    transition-duration: 5s;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,33 +20,37 @@ body{
 /* header links */
 #first-section #header-container{
     background-color: #ffffff;
+    width: 100%;
 }
 #first-section #header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0;
+    background-color: #ffffff;
+    
 }
 #first-section #header #logo{
     display: flex;
     justify-self: flex-start;
-    position: relative;
+    /* position: relative; */
     color: #7149BC;
-    width: 11%;
+    width: 15%;
     font-size: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
+    cursor: pointer;
 }
 #first-section #header-container #header #logo .fa{
     display: none;
 }
 #first-section #header #links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-self: flex-end;
-    width: 60%;
+    width: 50%;
     flex-wrap: wrap;
     align-self: center;
    
@@ -50,25 +61,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase; 
     transition: 0.5s;
+    font-weight: 600;
 }
 #first-section #header #links a:hover{
     color: #7149BC;
-    border-bottom: 3px solid #7149BC;;
-    position: relative;   
+    transition: ease-in-out 300ms;
+    /* position: relative;   */
+    cursor: pointer; 
 }
-/* #first-section #header #links a:hover::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #7149BC;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transition: 0.6s;
-   
-} */
 /* top-body */
 #first-section .top-body-container{
     background-color: rgb(113, 73, 188);
@@ -108,7 +108,7 @@ body{
     color: #ffffff;
 }
 #first-section .top-body .myself-container .myself p{
-    font-size: 15px;
+    font-size: 19px;
     padding: 12px;
     color: #d8d4d4;
 }
@@ -125,6 +125,7 @@ body{
 #first-section .top-body .myself-container .myself button:hover{
     background-color: rgb(164, 122, 241);
     transition: ease-in-out 1s;
+    cursor: pointer; 
 }
 #first-section .top-body .myself-container .myself .socials{
    display: flex;
@@ -145,6 +146,7 @@ body{
 #first-section .top-body .myself-container .myself .socials i:hover{
     background-color: rgb(69, 41, 121);
     transition: all 1.5s;
+    cursor: pointer; 
 }
 #first-section .top-body .myself-image{
     display: flex;
@@ -163,6 +165,7 @@ body{
     transform: scale(1.1);
     opacity: 0.9;
     transition: ease-in-out 1.2s;
+    cursor: pointer; 
 }
 /* About me section */
 #second-section{
@@ -239,9 +242,24 @@ body{
     width: 31%;
     background-color: #ffffff;
     border: 1px solid #e0dede;
+    border-radius: 5px;
     margin: 8px;
     padding-bottom: 20px;
 }
+#third-section .service .body-container .srv:hover{
+    background-color: #7149BC;
+    cursor: pointer;
+    margin-top: -2px;
+    transition: ease 500ms;
+}
+#third-section .service .body-container .srv:hover p{
+    color: #ffffff;
+}
+
+#third-section .service .body-container .srv:hover i{
+    color: #ffffff;
+}
+
 #third-section .service .body-container .srv i{
     font-size: 40px;
     color: #7149BC;
@@ -330,9 +348,9 @@ body{
     transition: ease-in-out 1.2s;
 }
 #forth-section .work .work-imgs img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.6;
-    cursor: copy;
+    cursor: pointer; 
 }
 #forth-section .work button{
     background-color: #7149BC;
