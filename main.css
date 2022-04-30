@@ -31,12 +31,12 @@ body{
     margin: 0 auto;
     padding: 20px 0;
     background-color: #ffffff;
-    
+    position: absolute;
 }
 #first-section #header #logo{
     display: flex;
     justify-self: flex-start;
-    /* position: relative; */
+    position: relative;
     color: #7149BC;
     width: 15%;
     font-size: 30px;
@@ -53,7 +53,7 @@ body{
     width: 50%;
     flex-wrap: wrap;
     align-self: center;
-   
+    position: relative;
 }
 #first-section #header #links a{
     text-decoration: none;
@@ -66,7 +66,7 @@ body{
 #first-section #header #links a:hover{
     color: #7149BC;
     transition: ease-in-out 300ms;
-    /* position: relative;   */
+    position: relative;  
     cursor: pointer; 
 }
 /* top-body */
@@ -498,13 +498,13 @@ body{
 
 /* tablet */
 @media screen and (max-width: 1024px){
-    #first-section #header-container #header #logo h4{
-        display: none;
+    #first-section #header #logo{
+        font-size: 100%;
     }
-    #first-section #header-container #header #links{
+    #first-section #header #links{
         display: flex;
         justify-content: space-between;   
-        width: 70%;
+        width: 80%;
         flex-wrap: nowrap;
         margin-left: 20px;
     }
@@ -640,7 +640,7 @@ body{
         width: 100%;
         display: none;
     }
-    #first-section #header-container #header #links a{
+    #first-section #header #links a{
         line-height: 40px;  
         font-size: 10px; 
         display: block;  
