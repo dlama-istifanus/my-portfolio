@@ -1,5 +1,4 @@
 let logo = document.getElementsByClassName('fa-dyalog')
-let headContainer = document.getElementById('header-container');
 let header = document.getElementById('header');
 let links = document.getElementById('links');
 let firstSec = document.getElementById('first-section')
